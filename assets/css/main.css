@@ -41,7 +41,7 @@
     align-items: center;
 }
 
-.header__navbar-item:hover a,
+.header__navbar-item:hover,
 .header__navbar-item-link:hover,
 .header__navbar-icon-link:hover {
     cursor: pointer;
@@ -138,17 +138,18 @@
     cursor: default;
     transform-origin: calc(100% - 20px) top;
     animation: growth ease-in 0.2s;
+    will-change: opacity, transform;
     display: none;
 }
 
 .header__noti::before {
     content: "";
-    display: block;
     border-width: 20px 30px;
+    border-style: solid;
     border-color: transparent transparent white transparent;
     position: absolute;
-    right: 2px;
-    top: -30px;
+    right: 10px;
+    top: -28px;
 }
 
 .header__noti::after {
