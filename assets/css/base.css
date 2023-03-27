@@ -89,15 +89,35 @@ p {
 
 .btn {
     min-width: 108px;
-    min-height: 36px;
+    height: 36px;
     text-decoration: none;
     border: none;
     border-radius: 2px;
     font-size: 1.2rem;
     padding: 0;
+    cursor: pointer;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btn--size-s {
+    padding: 0 8px;
+    height: 29px;
+}
+
+.btn.btn--normal:hover {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .btn.btn--primary {
     color: var(--white-color);
     background-color: var(--primary-color);
+}
+
+.btn.btn--disabled {
+    color: #949494;
+    cursor: default;
+    background-color: #c3c3c3;
 }
